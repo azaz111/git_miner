@@ -27,7 +27,6 @@ while [ $i -le 5 ]
 do
 x=$(( $x + 2 ))
 echo "schetchekSA: $x"
-pkill rclone
 rclone backend set osnova: -o service_account_file="/root/AutoRclone/accounts/$(( $x )).json";
 fusermount -uz /osnova
 screen -dmS mount rclone mount osnova: /osnova --allow-non-empty --daemon 
