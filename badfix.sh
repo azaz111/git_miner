@@ -30,7 +30,7 @@ echo "schetchekSA: $x"
 rclone backend set osnova: -o service_account_file="/root/AutoRclone/accounts/$(( $x )).json";
 fusermount -uz /osnova
 screen -dmS mount rclone mount osnova: /osnova --allow-non-empty --daemon 
-sleep 3600
+sleep 1800
 if [ $x = $lim ]; then x=$(( $x - 49 )) ; fi
 done
  
