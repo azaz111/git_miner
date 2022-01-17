@@ -22,8 +22,8 @@ screen -dmS mount rclone mount osnova: /osnova --allow-non-empty --daemon
 sleep 2
 screen -dmS mount rclone mount1 osnova1: /osnova1 --allow-non-empty --daemon 
 cd  
-sleep 60 
+sleep 60
 y=0
 fi
-
+sleep 120
 done  
