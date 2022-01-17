@@ -15,14 +15,16 @@ sleep 5
 fusermount -uz /osnova1
 sleep 1
 fusermount -uz /osnova
+sleep 1
 cd AutoRclone
 python3 SmenaDrive.py
+sleep 60
 echo "SMONTIROVALI"
 screen -dmS mount rclone mount osnova: /osnova --allow-non-empty --daemon 
 sleep 2
 screen -dmS mount rclone mount1 osnova1: /osnova1 --allow-non-empty --daemon 
 cd  
-sleep 60
+sleep 6
 y=0
 fi
 sleep 120
